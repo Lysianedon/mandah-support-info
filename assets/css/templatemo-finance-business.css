@@ -24,7 +24,6 @@ body {
 
 :root{
 	--deepblue : #1f88c7;
-	/* --lightblue : #1aa0a4; */
 	--lightblue : #36c8ce;
 }
 
@@ -431,7 +430,7 @@ header .navbar {
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/13.png);
+	background-image: url(../images/second-banner.png);
 }
 
 .Modern-Slider .item-3 .img-fill {
