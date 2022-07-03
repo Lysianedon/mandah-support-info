@@ -14,11 +14,18 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box !important;
+  word-wrap: break-word;
 }
 
 *{
 	scroll-behavior: smooth !important;
+}
 
+:root{
+	--deepblue : #1f88c7;
+	/* --lightblue : #1aa0a4; */
+	--lightblue : #36c8ce;
 }
 
 p {
@@ -46,11 +53,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blue{
-	color: #004aad !important;
+	color: #0d4ba1 !important;
 }
 
-.purple{
-	color: #625edd;
+.lightblue{
+	color: #36c8ce;
 }
 
 .bold{
@@ -62,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a.filled-button {
-	background-color: #625edd;
+	background-color: var(--deepblue);
 	color: #fff;
 	font-size: 1.3rem;
 	text-transform: uppercase;
@@ -71,7 +78,7 @@ a.filled-button {
 	border-radius: 3px;
 	display: inline-block;
 	transition: all 0.3s;
-	box-shadow: 6px 4px 2px 1px rgba(0, 0, 255, .2);
+	box-shadow: 6px 4px 2px 1px #82a7ef8c;
 }
 
 a.filled-button:hover {
@@ -95,7 +102,7 @@ a.border-button {
 
 a.border-button:hover {
 	background-color: #fff;
-	color: #625edddf;
+	color: #1aa0a4;
 }
 
 .section-heading {
@@ -111,8 +118,7 @@ a.border-button:hover {
 
 .section-heading em {
 	font-style: normal;
-	/* color: #625edddf; */
-	color: #625edddf;
+	color: var(--deepblue);
 }
 
 .section-heading span {
@@ -126,7 +132,7 @@ a.border-button:hover {
 
 #preloader {
   overflow: hidden;
-  background: #625edd;
+  background: var(--deepblue);
   left: 0;
   right: 0;
   top: 0;
@@ -208,7 +214,7 @@ a.border-button:hover {
 .sub-header {
 	/* background-color: #004aad;
 	background-color: #625edd; */
-	background-color: #625edddf;
+	background-color: var(--deepblue);
 	height: 46px;
 	line-height: 46px;
 }
@@ -287,7 +293,7 @@ header .navbar {
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
-	color: #625edd!important;
+	color: var(--deepblue)!important;
 }
 .background-header .navbar-nav a.nav-link {
 	color: #1e1e1e!important;
@@ -297,7 +303,7 @@ header .navbar {
 .background-header .navbar-nav .nav-link.current,
 .background-header .navbar-nav .nav-link.show,
 .background-header .navbar-nav .show>.nav-link {
-	color: #004aad!important;
+	color: var(--deepblue)!important;
 }
 .navbar .navbar-brand {
 	float: 	left;
@@ -333,7 +339,7 @@ header .navbar {
 	font-size: 1.1rem;
 	font-weight: 400;
 	letter-spacing: 0.4px;
-	color: #004aad !important;
+	color: var(--deepblue) !important;
 	transition: all 0.5s;
 	margin-top: 5px;
 }
@@ -342,10 +348,10 @@ header .navbar {
 .navbar .navbar-nav .nav-link.current,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show>.nav-link {
-	color: #625edd !important;
+	color: var(--deepblue) !important;
 	font-weight: 600;
 	font-style: 3rem !important;
-	border-bottom: 3px solid #625edd;
+	border-bottom: 3px solid var(--deepblue);
 }
 .navbar .navbar-toggler-icon {
 	background-image: none;
@@ -362,7 +368,7 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #625edd;
+	color: var(--deepblue);
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
@@ -421,7 +427,7 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/banniere-deux.png);
+	background-image: url(../images/main-banner.png);
 }
 
 .Modern-Slider .item-2 .img-fill {
@@ -504,14 +510,14 @@ ul.slick-dots {
 	/* box-shadow: 10px 8px 2px 1px rgba(0, 0, 255, .2); */
 	text-align: center;
 	width: 20% !important;
-	font-size: 2.5rem !important;
+	font-size: 2rem !important;
 }
 
 .Modern-Slider .item h4 {
+	font-size: clamp(40px, 1.5rem, 7rem);
+	font-weight: 700;
 	margin-bottom: 4rem;
 	text-transform: uppercase;
-	font-size: clamp(50px, 2rem, 7rem);
-	font-weight: 700;
 	letter-spacing: 2.5px;
 	overflow:hidden;
 	animation:fadeOutLeft 1s both;
@@ -568,7 +574,7 @@ ul.slick-dots {
 /*-------------------- Request Form ----------------------*/
 
 .request-form {
-	background-color: #625edddf;
+	background-color: var(--deepblue);
 	padding: 40px 0px;
 	color: #fff;
 }
@@ -603,7 +609,7 @@ ul.slick-dots {
 }
 
 .service-item .down-content {
-	background-color: #625edd14;
+	background-color: #1f87c732;
 	padding: 30px;
 }
 
@@ -664,7 +670,7 @@ ul.slick-dots {
 
 .fun-facts em {
 	font-style: normal;
-	color: #625edddf;
+	color: var(--deepblue);
 }
 
 .fun-facts p {
@@ -710,7 +716,8 @@ ul.slick-dots {
 }
 
 .more-info .more-info-content {
-	background-color: #625edd14;
+	/* deepblue transparent */
+	background-color: #1f87c71e; 
 }
 
 .about-info .more-info-content {
@@ -743,7 +750,7 @@ ul.slick-dots {
 
 .more-info .right-content em {
 	font-style: normal;
-	color: #625edddf;
+	color: var(--deepblue);
 }
 
 .more-info .right-content p {
@@ -760,7 +767,7 @@ ul.slick-dots {
 
 .testimonials {
 	margin-top: 140px;
-	background-color: #004badc1;
+	background-color: var(--deepblue);
 	padding: 140px 0px;
 }
 .testimonial-item .inner-content {
@@ -785,7 +792,7 @@ ul.slick-dots {
 	margin-top: 8px;
 	font-weight: 600;
 	font-size: 14px;
-	color: #625edd;
+	color: var(--deepblue);
 }
 .testimonial-item img {
 	max-width: 60px;
@@ -821,10 +828,15 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form {
-	background-color: #004bad35;
+	/* background-color: #004bad35; */
+	border: 1px solid var(--deepblue);
 	padding: 60px;
+	margin-bottom: 15vh;
 	border-radius: 5px;
 	text-align: center;
+}
+.callback-form .contact-form:hover{
+	border: 2px solid var(--deepblue);
 }
 
 .callback-form .contact-form input {
@@ -833,7 +845,7 @@ ul.slick-dots {
 	line-height: 40px;
 	display: inline-block;
 	padding: 0px 15px;
-	color: #6a6a6a;
+	color: var(--deepblue);
 	font-size: 13px;
 	text-transform: none;
 	box-shadow: none;
@@ -951,8 +963,8 @@ ul.slick-dots {
 /*------------------- Footer Style  ---------------*/
 
 footer {
-	background-color: #004badc1;
-	padding: 80px 0px;
+	background-color: var(--deepblue);
+	padding: 40px 0px;
 	color: #fff;
 }
 
@@ -993,7 +1005,7 @@ footer ul.social-icons li a {
 }
 
 footer ul.social-icons li a:hover {
-	background-color: #625edddf;
+	background-color: #5ce1e6;
 }
 
 footer ul.menu-list li {
@@ -1097,7 +1109,7 @@ footer .contact-form button.filled-button:hover {
 /* Sub-footer Style */
 
 .sub-footer {
-	background-color: #004aad;
+	background-color: var(--deepblue);
 	text-align: center;
 	padding: 25px 0px;
 }
