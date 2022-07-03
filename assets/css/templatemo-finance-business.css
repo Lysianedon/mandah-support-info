@@ -836,7 +836,7 @@ ul.slick-dots {
 	text-align: center;
 }
 .callback-form .contact-form:hover{
-	border: 2px solid var(--deepblue);
+	border: 1px solid var(--lightblue);
 }
 
 .callback-form .contact-form input {
