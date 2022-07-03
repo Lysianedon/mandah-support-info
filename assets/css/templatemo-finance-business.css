@@ -718,6 +718,7 @@ ul.slick-dots {
 .more-info .more-info-content {
 	/* deepblue transparent */
 	background-color: #1f87c71e; 
+	/* border: 1px solid var(--deepblue); */
 }
 
 .about-info .more-info-content {
