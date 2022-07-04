@@ -337,7 +337,7 @@ header .navbar {
 	font-size: 1.1rem;
 	font-weight: 400;
 	letter-spacing: 0.4px;
-	color: var(--deepblue) !important;
+	color: black !important;
 	transition: all 0.5s;
 	margin-top: 5px;
 }
